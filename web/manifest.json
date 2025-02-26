@@ -1,6 +1,6 @@
 {
-    "name": "sid_portoflio",
-    "short_name": "sid_portoflio",
+    "name": "portoflio",
+    "short_name": "portoflio",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

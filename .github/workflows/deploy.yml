@@ -15,7 +15,7 @@ jobs:
           flutter-version: '3.22.2'
           channel: 'stable'
       - run: flutter pub get
-      - run: flutter build web --release
+      - run: flutter build web --release --wasm
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:

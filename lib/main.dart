@@ -46,14 +46,13 @@ class AppRoutes {
     // '/contact': 3,
   };
 
-  static GoRouter getRouter() => GoRouter(
-        routes: routes.entries
-            .map((entry) => GoRoute(
-                  path: entry.key,
-                  builder: (_, __) => MainScreen(selectedIndex: entry.value),
-                ))
-            .toList(),
-      );
+  static GoRouter getRouter() => GoRouter(routes: [
+        ...routes.entries.map((entry) => GoRoute(
+              path: entry.key,
+              builder: (_, __) => MainScreen(selectedIndex: entry.value),
+            )),
+        GoRoute(path: "/contact", builder: (_, __) => const ContactPage())
+      ]);
 
   static String getPath(int index) => routes.keys.elementAt(index);
 }
@@ -425,22 +424,24 @@ class ContactPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(24),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text('Get in Touch',
-              style: Theme.of(context).textTheme.headlineSmall),
-          const SizedBox(height: 24),
-          ..._contactItems.map((item) => ContactInfo(
-                icon: item.icon,
-                text: item.text,
-                url: item.url,
-              )),
-        ],
-      ),
-    ).animate().fadeIn(duration: 800.ms);
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text('Get in Touch',
+                style: Theme.of(context).textTheme.headlineSmall),
+            const SizedBox(height: 24),
+            ..._contactItems.map((item) => ContactInfo(
+                  icon: item.icon,
+                  text: item.text,
+                  url: item.url,
+                )),
+          ],
+        ),
+      ).animate().fadeIn(duration: 800.ms),
+    );
   }
 }
 

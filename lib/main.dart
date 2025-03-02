@@ -286,22 +286,56 @@ class ProjectsPage extends StatelessWidget {
 
   static const _projects = [
     {
+      'title': 'Fruad Risk Management Portal - Flutter',
+      'description':
+          'Designed and developed applcation portal from scratch and publish it for internal use',
+    },
+    {
+      'title': 'Retire100 - Flutter',
+      'description':
+          'Developed application from scratch, integrated MoEngage & Appsflyer, push notifications.',
+      'Apple store':
+          'https://apps.apple.com/in/app/retire100-mf-nps-health/id6478929485',
+      'Play store':
+          'https://play.google.com/store/apps/details?id=com.thetruefin.mobile&hl=en_US&pli=1',
+    },
+    {
       'title': 'Truepal - iOS & Flutter',
       'description':
-          'Developed partner onboarding, integrated MoEngage & Appsflyer, push notifications.',
-      'link': 'https://apps.apple.com/in/app/truepal-partner/id6468958746',
+          'Developed application from scratch partner onboarding, integrated MoEngage & Appsflyer, push notifications.',
+      'Apple store':
+          'https://apps.apple.com/in/app/truepal-partner/id6468958746',
+      'Play store':
+          'https://play.google.com/store/apps/details?id=com.thetruepal.partner&hl=en_US',
     },
     {
       'title': 'Donna for Agents',
       'description':
-          'Integrated Alamofire, OneSignal, WebView authentication, and voice search.',
-      'link': 'https://apps.apple.com/us/app/donna-for-agents/id6444062364',
+          'Integrated on HTTP & Dio library, One signal, Gravatar image API, App Authentication using Web view and Gravity, global search (policy / customer) feature using voice',
+      'Apple store':
+          'https://apps.apple.com/us/app/donna-for-agents/id6444062364',
+      'Play store':
+          'https://play.google.com/store/apps/details?id=com.aureus.donnaapp&hl=en_US',
     },
     {
       'title': 'Cub McPaws iOS App',
       'description':
-          'Migrated Objective-C to Swift, integrated AR features using RealityKit & SceneKit.',
-      'link': 'https://apps.apple.com/in/app/cub-mcpaws/id1438225998',
+          'Migrated Objective-C to Swift, integrated AR features using RealityKit & SceneKit. Maintain native code base with new features.\n- Converted native app into flutter app, \nused Method channels to support features like AR technology. \n- Used Chopper for API calls in flutter app. \n- Used Retrofit in Android native java and UrlSession \nwith Codable protocol in iOS native swift',
+      'Apple store': 'https://apps.apple.com/in/app/cub-mcpaws/id1438225998',
+      'Play store': 'https://apps.apple.com/in/app/cub-mcpaws/id1438225998',
+    },
+    {
+      'title': 'MyShopper',
+      'description':
+          'Developed partner onboarding, integrated MoEngage & Appsflyer, push notifications.',
+      'link':
+          'https://apps.apple.com/us/app/your-personal-shopper/id1506570585',
+    },
+    {
+      'title': 'Truepal - iOS & Flutter',
+      'description':
+          'Developed partner onboarding, integrated MoEngage & Appsflyer, push notifications.',
+      'link': 'https://apps.apple.com/in/app/truepal-partner/id6468958746',
     },
   ];
 

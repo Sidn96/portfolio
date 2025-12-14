@@ -231,7 +231,7 @@ class HomePage extends StatelessWidget {
                     Colors.transparent, // Optional for transparency
                 child: ClipOval(
                   child: Image.asset(
-                    'assets/images/profile.jpeg',
+                    'assets/assets/images/profile.jpeg',
                     fit: BoxFit.fill,
                     width: 160,
                     height: 160,

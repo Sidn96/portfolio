@@ -83331,7 +83331,7 @@ G(a){var s,r,q,p=null,o="Mobile Developer",n=A.X(a).ax.b,m=B.c.ad(25.5)
 n=A.V(m,n.gl()>>>16&255,n.gl()>>>8&255,n.gl()&255)
 s=A.X(a).ax.y
 s=A.b([n,A.V(m,s.gl()>>>16&255,s.gl()>>>8&255,s.gl()&255)],t.t_)
-n=A.v8(new A.G1(new A.Ge(new A.xh(A.aFK(p,p,new A.vv("assets/images/profile.jpeg",p,p)),160,160,B.zW,p),p),B.A,80,p))
+n=A.v8(new A.G1(new A.Ge(new A.xh(A.aFK(p,p,new A.vv("assets/assets/images/profile.jpeg",p,p)),160,160,B.zW,p),p),B.A,80,p))
 m=A.bS(6e5,0)
 n=n.DV(new A.KH(p,!0,p,m,p,B.f,B.tw))
 m=A.X(a).p2.f
